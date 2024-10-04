@@ -4,9 +4,12 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+import java.util.HashSet;
+import java.util.Set;
+
+
+@MappedSuperclass
 @Data
-@NoArgsConstructor
 public abstract class User {
 
     @Id
