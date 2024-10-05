@@ -1,7 +1,9 @@
 package com.api.assocaitionAPI.service.security;
 
-import com.api.assocaitionAPI.model.account.Admin;
+import com.api.assocaitionAPI.model.account.user.Admin;
+import com.api.assocaitionAPI.model.account.user.User;
 import com.api.assocaitionAPI.repo.AdminRepo;
+import com.api.assocaitionAPI.repo.UserRepo;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,28 +17,28 @@ import java.util.stream.Collectors;
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-    private final AdminRepo adminRepo;
+    private final UserRepo userRepo;
 
-    public UserDetailsServiceImpl(AdminRepo adminRepo) {
-        this.adminRepo = adminRepo;
+    public UserDetailsServiceImpl(UserRepo userRepo) {
+        this.userRepo = userRepo;
     }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Admin admin = adminRepo.findByUsername(username);
+        User user = userRepo.findByUsername(username);
 
-        System.out.println("admin loaded: " + admin);
-        if (admin == null) {
+        System.out.println("user loaded: " + user);
+        if (user == null) {
             throw new UsernameNotFoundException("User not found");
         }
 
-        Collection<GrantedAuthority> grantedAuthorities = admin.getRoles().stream()
+        Collection<GrantedAuthority> grantedAuthorities = user.getRoles().stream()
                 .map(role -> new SimpleGrantedAuthority(role.getName()))
                 .collect(Collectors.toList());
 
         return new org.springframework.security.core.userdetails.User(
-                admin.getUsername(),
-                admin.getPassword(),
+                user.getUsername(),
+                user.getPassword(),
                 grantedAuthorities
         );
     }

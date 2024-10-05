@@ -1,6 +1,6 @@
 package com.api.assocaitionAPI.service.model.impl;
 
-import com.api.assocaitionAPI.model.account.Admin;
+import com.api.assocaitionAPI.model.account.user.Admin;
 import com.api.assocaitionAPI.model.account.Role;
 import com.api.assocaitionAPI.service.model.AdminService;
 import org.springframework.stereotype.Service;

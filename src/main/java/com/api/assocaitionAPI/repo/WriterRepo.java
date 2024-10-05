@@ -1,10 +1,9 @@
 package com.api.assocaitionAPI.repo;
 
-import com.api.assocaitionAPI.model.account.user.Admin;
+import com.api.assocaitionAPI.model.account.user.Writer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AdminRepo extends JpaRepository<Admin, Long> {
-    Admin findByUsername(String username);
+public interface WriterRepo extends JpaRepository<Writer, Long> {
 }

@@ -78,7 +78,6 @@ public class SecurityCommands {
             else {
                 return "no role.";
             }
-//            return "your role: " + authentication.getAuthorities().iterator().next().getAuthority();
         }
         return "Not logged in.";
     }

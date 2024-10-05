@@ -20,3 +20,40 @@
 1728040892824:whatrole
 1728040898194:logout
 1728040902567:login erfan
+1728134310615:whoami
+1728134316799:login admin password
+1728134319556:whoami
+1728134323181:whatrole
+1728135062388:login -u admin -p password
+1728135070850:create-write
+1728135081503:create-write erfan erfan
+1728135117254:create-write e e
+1728135129521:login admin password
+1728135134622:create-write a a
+1728135362889:login admin password
+1728135367294:whatrole
+1728135515024:login admin password
+1728135522095:create-write e e
+1728137091491:login admin password
+1728137103952:create-writer erfan password
+1728137197525:login admin password
+1728137225007:whoami
+1728137232169:create-writer erfan password
+1728137243648:logout
+1728137250126:login erfan password
+1728137338823:login admin password
+1728137353895:create-writer erfan password
+1728137358840:logout
+1728137364806:login erfan password
+1728137458506:login admin password
+1728137466063:create-writer erfan password
+1728137474218:create-writer erfan pppp
+1728137555424:login admin password
+1728137576848:create-writer erfan password
+1728137611984:login
+1728137615023:logout
+1728137625676:login erfan password
+1728137642971:create-write parsa pass
+1728137659116:create-writer parsa pass
+1728137720568:login admin password
+1728137728314:create-writer admin pass

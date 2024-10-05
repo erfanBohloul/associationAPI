@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class Student extends User {
+public class Student extends Person {
 
     private String studentNumber;
     private String major;

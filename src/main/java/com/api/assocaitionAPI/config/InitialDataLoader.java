@@ -1,11 +1,10 @@
 package com.api.assocaitionAPI.config;
 
-import com.api.assocaitionAPI.model.account.Admin;
+import com.api.assocaitionAPI.model.account.user.Admin;
 import com.api.assocaitionAPI.model.account.Role;
 import com.api.assocaitionAPI.repo.AdminRepo;
 import com.api.assocaitionAPI.repo.RoleRepo;
 import jakarta.annotation.PostConstruct;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -37,9 +36,13 @@ public class InitialDataLoader {
     }
 
     private void loadRole() {
-        Role role = new Role();
-        role.setName("ADMIN");
-        roleRepo.save(role);
+        Role adminRole = new Role();
+        adminRole.setName("ADMIN");
+        roleRepo.save(adminRole);
+
+        Role writerRole = new Role();
+        writerRole.setName("WRITER");
+        roleRepo.save(writerRole);
     }
 
     private void loadAdmin() {
