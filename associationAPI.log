@@ -57,3 +57,292 @@
 1728137659116:create-writer parsa pass
 1728137720568:login admin password
 1728137728314:create-writer admin pass
+1728143986070:login erfan password
+1728143989980:whatrole
+1728143992946:whoami
+1728143999121:create-post
+1728144012677:create-post my first post
+1728144041199:create-post -t my-first-post
+1728144154793:login erfan password
+1728144165540:create-post -t first post
+1728144610286:login erfan password
+1728144616729:create-post -t why
+1728144700073:login erfan password
+1728144707345:create-post -t t
+1728144716002:create-post something
+1728144863277:login erfan password
+1728144868823:create-post odfkl
+1728145064956:login erfan password
+1728145080636:create-post -t part
+1728145648320:login erfan password
+1728145673971:update-post 1 updated
+1728145711890:create-post -t very very very long title
+1728145895452:login erfan password
+1728145914620:update-post 2 paskojast?
+1728146674322:login erfan password
+1728146691934:update-post 1 tttt
+1728146822650:login erfan password
+1728146833054:update-post 1 ttttt
+1728146922661:login erfan password
+1728146935919:update-post 1 tttttt
+1728146979495:login erfan password
+1728146990547:create-post 1 tttt
+1728147002461:update-post 1 tttt
+1728147065953:login erfan password
+1728147079896:update-post 1 tttt
+1728159294018:login erfan password
+1728159298638:whatrole
+1728159312412:update-post 1 tttttt
+1728159591230:login erfan password
+1728159601425:update-post 1 ttttt
+1728159663721:login erfan password
+1728159685290:update-post 1 tttt
+1728159767114:login erfan password
+1728159772401:update-post 1 tttt
+1728159803152:login erfan password
+1728159807731:update-post 1 tttt
+1728160311692:login erfan password
+1728160314904:update-post 1 tttt
+1728160433857:login erfan password
+1728160439284:update-post 1 tttt
+1728160484672:login erfan password
+1728160489286:update-post 1 tttt
+1728160677239:login erfan password
+1728160682069:update-post 1 tttt
+1728160847530:login erfan password
+1728160852593:update-post 1 tttt
+1728161162347:login erfan password
+1728161168100:update-post 1 tttt
+1728161570594:login erfan password
+1728161575367:update-post 1 tttt
+1728161966418:login erfan password
+1728161983753:update-post 1 tttt
+1728162033504:login erfan password
+1728162039993:update-post 1 tttt
+1728162105068:login erfan password
+1728162110285:update-post 1 tttt
+1728162254398:login erfan password
+1728162259355:update-post 1 tttt
+1728212001041:login erfan password
+1728212017743:update-post 1 ttttt
+1728212351892:login erfan password
+1728212356993:update-post 1 tttt
+1728212443409:login erfan password
+1728212447072:update-post 1 tttt
+1728212478283:login erfan password
+1728212482349:update-post 1 tttt
+1728212502393:login erfan password
+1728212508674:update-post 1 tttt
+1728212555150:login erfan password
+1728212559781:update-post 1 tttt
+1728212567889:update-post 2 tttt
+1728212581539:update-post 3 tttt
+1728213629966:login erfan password
+1728213770265:login admin password
+1728213809198:create-writer
+1728213821220:create-writer erfan password
+1728213825693:logout
+1728213834835:login erfan password
+1728213850825:create-post
+1728213859542:create-post first
+1728213880109:update-post 1 updated
+1728214180495:login erfan password
+1728214184700:update-post 1 tttt
+1728214498652:login erfan password
+1728214510624:update-post 1 tttt
+1728214564185:login erfan password
+1728214572695:update-post 1 ttttt
+1728215353938:login admin password
+1728215362308:grant
+1728215367998:grant auth
+1728215435249:grant auth -u erfan -p write -c account.event.post -i 1
+1728217059795:login erfan password
+1728217062965:show auths
+1728217070098:logout
+1728217087660:login admin password
+1728217097343:show auths
+1728217113229:grant auth
+1728217156733:grant auth -p write -u erfan -c event.post -i 1
+1728217233381:login admin password
+1728217238779:grant auth -p write -u erfan -c event.post -i 1
+1728217245751:logout
+1728217250428:login erfan password
+1728217254020:show auths
+1728217411370:login erfan password
+1728217420507:create-post -t sec
+1728217563719:login erfan password
+1728217723854:login erfan passwor
+1728217729641:login erfan password
+1728217777821:create-post third
+1728217787177:whatrole
+1728217793790:create-post
+1728217800423:create-post third
+1728217952824:login erfan password
+1728217965644:create-post third
+1728218011495:lgoin erfan password
+1728218016330:login erfan password
+1728218029208:create-post third
+1728644086275:login admin password
+1728644088828:whoami
+1728644091952:whatrole
+1728644100339:create-post tttt
+1728644148098:create-writer erfan erfan
+1728644150975:logout
+1728644155907:login erfan erfan
+1728644158836:whoami
+1728644168952:login erfan erfan
+1728644178202:login admin password
+1728644181866:whoami
+1728644186662:logout
+1728644189169:whoami
+1728644194116:login erfan erfan
+1728644212538:create-post first
+1728644230971:stacktrace
+1728644291260:login erfan erfan
+1728644301151:create-post -t first
+1728644324174:login erfan erfan
+1728644331851:create-post -t first
+1728644340385:stachtrace
+1728644346610:stacktrace
+1728644632179:login admin admin
+1728644698948:create-writer erfan erfan
+1728644719709:whoami
+1728644725931:login admin admin
+1728644732058:login admin password
+1728644737630:create-writer erfan erfan
+1728644741688:login erfan erfan
+1728644746429:create-post first
+1728644821013:login admin password
+1728644827701:create-writer erfan erfan
+1728644834038:login erfan erfan
+1728644841130:create-post first
+1728645162048:login admin password
+1728645174143:login erfan erfan
+1728645180071:create-post -t first
+1728645225815:update-post 2 second
+1728645239328:stacktrace
+1728645873635:login erfan erfan
+1728645881115:update-post 2 second
+1728645893447:show auths
+1728645902755:login admin password
+1728645905794:grant auth
+1728646111930:grant auth 2 write event/post erfan
+1728646169481:grant auth -i 2 -p write -c event/post -u erfan
+1728646176520:login erfan erfan
+1728646179922:showauths
+1728646184535:show auths
+1728646204954:update-post -i 2 -t sec
+1728646253533:update-post 2 sec
+1728646432058:lognillogin admin password
+1728646438941:login admin password
+1728646452879:grant au
+1728646460577:grant auth
+1728646502029:grant auth -u erfan -c event.post -i 2 -p write
+1728646513680:login erfan erfan
+1728646529420:update-post 2 sec
+1728646551416:update-post -i 1 -t updated
+1728646932544:login admin password
+1728646952860:create-writer ali ali
+1728646958338:login ali ali
+1728646968248:create-post first-ali
+1728646982266:whoami
+1728646985559:whatrole
+1728647018443:create-post -t first_ali
+1728647025358:stacktrace
+1728647077215:login ali ali
+1728647098949:create-post first_ali
+1728647115774:show auths
+1728647138904:update-post 5 first_ali_up
+1728647344846:login admin password
+1728647367511:del post 1
+1728647374985:del post 2
+1728647384294:del post 3
+1728647387513:del post 4
+1728647390896:del post 2
+1728647420685:del post 5
+1728647457359:login ali ali
+1728647476865:create-post -t the -6th
+1728647486760:login admin poassword
+1728647495077:login admin password
+1728647500841:del post 6
+1728647779014:login admin password
+1728647797915:create-writer erfan erfan
+1728647804885:login erfan erfan
+1728647809018:whoami
+1728647833687:create-post first-erfan
+1728647846079:show auths
+1728647861213:login admin password
+1728647867019:del post 1
+1728648094582:login admin password
+1728648102740:create-writer erfan erfan
+1728648109643:login erfan erfan
+1728648114839:create-post first
+1728648124431:login admin password
+1728648130904:del post 1
+1728847318996:login admin password
+1728847321827:whoami
+1728847327989:create-writer erfan erfan
+1728847332872:login erfan erfan
+1728847335663:whoami
+1728847358460:create-post
+1728847368157:create-post first
+1728847400702:login admin password
+1728847418075:del post 1
+1728848259447:login admin password
+1728848291334:create-writer ali ali
+1728848299270:list writers
+1728848361874:login ali ali
+1728848368861:create-post sec
+1728848373856:login admin password
+1728848380728:del post
+1728848385246:del post 2
+1728848392442:list writers
+1728848429942:login ali ali
+1728848440310:login admin password
+1728848447691:create-writer erfan erfan
+1728848458681:create-writer ali ali
+1728848472894:list writers
+1728848480026:list writers 1
+1728848507477:list writers --help
+1728848541320:login erfan erfan
+1728848553838:create-post third
+1728848568981:login admin password
+1728848577001:del post 3
+1728848582304:list writers
+1728848642373:login admin password
+1728848648648:create-writer erfan erfan
+1728848655718:login erfan erfan
+1728848663973:create-post -t first
+1728848668093:login admin admin
+1728848679121:del post 1
+1728848688635:login admin password
+1728848692945:del post 1
+1728848700222:list writers
+1728849063427:login admin password
+1728849070120:create-writer erfan erfan
+1728849073780:login erfan erfan
+1728849078453:create-post first
+1728849085057:login admin password
+1728849087832:del post 1
+1728849762906:login admin password
+1728849766996:create erfan erfan
+1728849773340:create-writer erfan erfan
+1728849785909:list writers
+1728849790958:login erfan erfan
+1728849796751:create-post sec
+1728849812496:login admin password
+1728849817878:del post 2
+1728849824465:list writers
+1728850010835:login admin password
+1728850013477:dle post 2
+1728850016264:del post 2
+1728850020591:list writers
+1728850028463:del post 1
+1728850031845:list writers
+1728850039056:login erfan erfan
+1728850049278:create-post third
+1728850056110:login admin admin
+1728850083033:del post 3
+1728850090288:login admin password
+1728850094488:del post 3
+1728850099180:login erfan erfan

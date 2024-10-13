@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface WriterRepo extends JpaRepository<Writer, Long> {
+    Writer findByUsername(String username);
 }

@@ -21,9 +21,9 @@ public class Event {
     private Date startDate;
     private Date endDate;
 
-    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "event", cascade = CascadeType.PERSIST, orphanRemoval = true)
     private Set<Staff> staffs = new HashSet<>();
 
-    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "event", cascade = CascadeType.PERSIST)
     private Set<Sponsor> sponsors = new HashSet<>();
 }

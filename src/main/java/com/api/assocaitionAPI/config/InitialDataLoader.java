@@ -5,6 +5,7 @@ import com.api.assocaitionAPI.model.account.Role;
 import com.api.assocaitionAPI.repo.AdminRepo;
 import com.api.assocaitionAPI.repo.RoleRepo;
 import jakarta.annotation.PostConstruct;
+import jakarta.transaction.Transactional;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -23,6 +24,7 @@ public class InitialDataLoader {
     }
 
     @PostConstruct
+    @Transactional
     public void loadData() {
 
         if (roleRepo.count() == 0) {

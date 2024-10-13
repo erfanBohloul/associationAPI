@@ -1,8 +1,10 @@
 package com.api.assocaitionAPI.config;
 
 
+import com.api.assocaitionAPI.service.security.permission_eval.PermissionEval;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -40,6 +42,33 @@ public class SecurityConfig extends GlobalMethodSecurityConfiguration {
 
     @Override
     protected MethodSecurityExpressionHandler createExpressionHandler() {
-        return new DefaultMethodSecurityExpressionHandler();
+        DefaultMethodSecurityExpressionHandler handler = new DefaultMethodSecurityExpressionHandler();
+        handler.setPermissionEvaluator(new PermissionEval());
+        return handler;
+    }
+
+    @Bean
+    static MethodSecurityExpressionHandler expressionHandler(
+            PermissionEval permissionEval) {
+
+        // create a new DefaultMethodSecurityExpressionHandler
+        // that will utilize CustomPermissionEvaluator
+        DefaultMethodSecurityExpressionHandler handler =
+                new DefaultMethodSecurityExpressionHandler();
+        // add the PermissionEvaluator
+        handler.setPermissionEvaluator(permissionEval);
+        return handler;
+    }
+
+    @Bean
+    public MethodSecurityExpressionHandler defaultMethodSecurityExpressionHandler() {
+        DefaultMethodSecurityExpressionHandler handler = new DefaultMethodSecurityExpressionHandler();
+        handler.setPermissionEvaluator(new PermissionEval());
+        return handler;
+    }
+
+    @Bean
+    protected PermissionEvaluator permissionEvaluator() {
+        return new PermissionEval();
     }
 }

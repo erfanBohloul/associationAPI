@@ -1,6 +1,7 @@
 package com.api.assocaitionAPI.service.model.impl;
 
 import com.api.assocaitionAPI.model.account.user.Writer;
+import com.api.assocaitionAPI.model.event.Post;
 import com.api.assocaitionAPI.repo.WriterRepo;
 import com.api.assocaitionAPI.service.model.WriterService;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -33,7 +34,12 @@ public class WriterServiceImpl implements WriterService {
         writerRepo.deleteById(id);
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')")
+    @Override
+    public void deletePost(Writer writer,  Post post) {
+        writer.getPosts().remove(post);
+        writerRepo.save(writer);
+    }
+
     @Override
     public Writer update(Writer writer) {
         return writerRepo.save(writer);
@@ -42,5 +48,16 @@ public class WriterServiceImpl implements WriterService {
     @Override
     public List<Writer> findAll() {
         return writerRepo.findAll();
+    }
+
+
+    @Override
+    public Writer findByUsername(String username) {
+        return writerRepo.findByUsername(username);
+    }
+
+    @Override
+    public long count() {
+        return writerRepo.count();
     }
 }

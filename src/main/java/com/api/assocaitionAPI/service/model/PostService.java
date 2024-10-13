@@ -9,7 +9,8 @@ public interface PostService {
     Post save(Post post);
     Post update(Post post);
     void delete(Post post);
+    void deleteById(Long id);
     List<Post> findAll();
     Post findById(Long id);
-
+    void updateTitle(Post post, String title);
 }
