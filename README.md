@@ -12,3 +12,6 @@ this application uses **MySQL** database that runs on port 3306 on local system.
 you can see other properties of associationDB from compose.yml file and application.properties file.
 
 this application using JPA. you can see the relation between entities through the source code yourself.
+
+## Security
+the major of configured security is about acl security. i defined a custome permission evaluater and with help of A and B classes, we will figuring out how to evalute permission
